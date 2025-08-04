@@ -1,1 +1,60 @@
 @charset "utf -8";
+
+body {
+  height: 1500px;
+}
+
+.visual {
+  position: relative;
+  height: 910px;
+  width: 100%;
+  background: url("../images/img_visual01.png") no-repeat center fixed;
+  background-size: cover;
+  padding-top: 80px;
+  color: #fff;
+}
+
+.visual-inner {
+  padding-top: 245px;
+}
+
+/* 비주얼 슬로건 위 빨간색 표시 */
+.visual-slogan::before {
+  position: absolute;
+  left: 10px;
+  top: -48px;
+  width: 60px;
+  height: 5px;
+  background-color: #ed1c24;
+  content: "";
+}
+
+/* 비주얼 슬로건 */
+.visual-slogan {
+  position: relative;
+  font-size: 70px;
+  font-weight: 500;
+  /* 폰트 사이즈가 70px이니 70px로 표시(1=70px) */
+  line-height: 1;
+}
+
+/* 비주얼 설명 */
+.visual-txt {
+  display: block;
+  font-size: 21px;
+  padding-top: 42px;
+}
+
+/* 비주얼 버튼 영역 */
+.visual-btn {
+  position: absolute;
+  bottom: 30px;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 33px;
+  height: 33px;
+  font-size: 0;
+  border: none;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: -122px 0px;
+}

@@ -1,1 +1,147 @@
 @charset "utf -8";
+
+body {
+  height: 2000px;
+}
+
+/* 비즈니스 */
+.business {
+  position: relative;
+}
+
+/* 비즈니스 상단 */
+.business-top {
+  /* background-color: aquamarine; */
+  height: 300px;
+}
+
+.business-title {
+  font-size: 44px;
+  color: #111;
+  text-align: center;
+  padding-top: 100px;
+}
+
+/* 비즈니스 상단 설명 위 빨간색 표시 */
+.business-desc::after {
+  position: absolute;
+  left: 50%;
+  top: 175px;
+  transform: translateX(-50%);
+  width: 30px;
+  height: 5px;
+  background-color: #ff0000;
+  content: "";
+}
+
+/* 비즈니스 상단 설명 */
+.business-desc {
+  padding-top: 40px;
+  font-size: 16px;
+  text-align: center;
+}
+
+/* 비즈니스 하단 */
+.business-list {
+  position: relative;
+  display: flex;
+  width: 100%;
+  height: 420px;
+}
+
+/* 비즈니스 리스트 카테고리 위드 값 주기(5등분) */
+.business-list > li {
+  position: relative;
+  width: calc(100% / 5);
+  background: url("../images/img_business.png");
+  background-position: 0px 0px;
+}
+
+/* 비즈니스 1번쨰 사진 */
+.business-list > li:nth-child(1) {
+  background-position: calc(240px * 0) 0px;
+}
+
+/* 비즈니스 2번째 사진 */
+.business-list > li:nth-child(2) {
+  background-position: calc(240px * -1) 0px;
+}
+
+/* 비즈니스 3번째 사진 */
+.business-list > li:nth-child(3) {
+  background-position: calc(240px * -2) 0px;
+}
+
+/* 비즈니스 4번째 사진 */
+.business-list > li:nth-child(4) {
+  background-position: calc(240px * -3) 0px;
+}
+
+/* 비즈니스 5번째 사진 */
+.business-list > li:nth-child(5) {
+  background-position: calc(240px * -4) 0px;
+}
+
+/* 비즈니스 하단 a 단어 글씨 색상 */
+.business-list > li > a {
+  position: relative;
+  white-space: nowrap;
+  display: block;
+  width: 100%;
+  height: 100%;
+  background-color: rgba(244, 128, 37, 0);
+  color: #fff;
+  font-size: 24px;
+  text-align: center;
+  padding: 100px 0;
+  transition: all 0.5s;
+}
+
+.business-list > li > a::after {
+  content: "";
+  width: 130px;
+  height: 112px;
+  position: absolute;
+  bottom: 90px;
+  left: 50%;
+  transform: translateX(-50%);
+  background: url(../images/bg_common.png) no-repeat;
+  background-position: 0px 0px;
+  opacity: 0;
+  transition: all 0.5s;
+}
+
+.business-list > li > a:hover::after {
+  opacity: 1;
+}
+
+/* 비즈니스 1번째 사진  */
+.business-list > li:nth-child(1) > a::after {
+  background-position: -169px 0px;
+}
+
+/* 비즈니스 2번째 사진  */
+.business-list > li:nth-child(2) > a::after {
+  background-position: -298px 0px;
+}
+
+/* 비즈니스 3번째 사진  */
+.business-list > li:nth-child(3) > a::after {
+  background-position: 0px -117px;
+}
+
+/* 비즈니스 4번째 사진  */
+.business-list > li:nth-child(4) > a::after {
+  background-position: -139px -122px;
+}
+
+/* 비즈니스 5번째 사진  */
+.business-list > li:nth-child(5) > a::after {
+  background-position: -267px -118px;
+}
+
+
+/* 비즈니스 하단 a hover 했을 때 */
+.business-list > li > a:hover {
+  background-color: rgba(244, 128, 37, 1);
+}

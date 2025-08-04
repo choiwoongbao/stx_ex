@@ -27,6 +27,7 @@ ul,
 li {
   list-style: none;
 }
+
 a {
   color: #333;
   text-decoration: none;
@@ -37,6 +38,7 @@ a {
   width: 100%;
   max-width: 1200px;
   margin: auto;
+  /* background-color: rgb(221, 224, 228); */
 }
 
 /* 전체 레이아웃 */
@@ -45,4 +47,3 @@ a {
   display: block;
 }
 
-.
