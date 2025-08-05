@@ -1,1 +1,79 @@
 @charset "utf -8";
+
+/* 뉴스 */
+.news {
+  position: relative;
+  width: 100%;
+  padding: 55px 0;
+  background-color: #ed1c24;
+  margin-top: 150px;
+}
+
+/* 뉴스 배경색 넣기 */
+.news-bg {
+  background-color: #58595b;
+  width: 50%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  right: 0;
+}
+
+.news-inner {
+  display: flex;
+  position: relative;
+  gap: 100px;
+}
+
+.news-wrap {
+  position: relative;
+  width: 50%;
+}
+
+.news-wrap h3 {
+  font-size: 32px;
+  color: #fff;
+  font-weight: 300;
+  margin-bottom: 45px;
+}
+
+/* 뉴스 리스트 */
+.news-list {
+  position: relative;
+}
+
+.news-list li {
+  position: relative;
+  padding: 25px 0;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.news-list li:last-child {
+  border-bottom: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.news-list li a {
+  color: #fff;
+  font-size: 16px;
+}
+
+.news-list li a::after {
+  content: "";
+  position: absolute;
+  top: 50%;
+  right: 18px;
+  transform: translateY(-50%);
+  width: 48px;
+  height: 23px;
+  background: url("../images/bg_common.png") no-repeat;
+  background-position: 0px -43px;
+}
+
+.news-txt {
+  display: block;
+  width: 70%;
+  /* 말줄임 표시 */
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}

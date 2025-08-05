@@ -21,6 +21,12 @@ body {
   text-align: center;
   padding-top: 100px;
 }
+/* 비즈니스 상단 설명 */
+.business-desc {
+  padding-top: 40px;
+  font-size: 16px;
+  text-align: center;
+}
 
 /* 비즈니스 상단 설명 위 빨간색 표시 */
 .business-desc::after {
@@ -34,12 +40,6 @@ body {
   content: "";
 }
 
-/* 비즈니스 상단 설명 */
-.business-desc {
-  padding-top: 40px;
-  font-size: 16px;
-  text-align: center;
-}
 
 /* 비즈니스 하단 */
 .business-list {
